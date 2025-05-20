@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-blue: #1a73e8;
     --secondary-blue: #4285f4;
