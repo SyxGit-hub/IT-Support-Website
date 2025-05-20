@@ -140,9 +140,10 @@ nav {
     justify-content: center;
 }
 
-.image-placeholder i {
-    font-size: 4rem;
-    color: var(--primary-blue);
+.card_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Contact Section */
@@ -174,10 +175,16 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .btn:hover {
     background-color: var(--secondary-blue);
+}
+
+.logo_img {
+    max-width: 300px;
+    min-width: 150px;
 }
 
 /* Animations */
