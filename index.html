@@ -1,117 +1,1118 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Support Services - Professionelle IT-Betreuung & Support</title>
-    <meta name="description" content="Professioneller IT-Support und IT-Dienstleistungen für kleine Unternehmen und Privatpersonen. 24/7 Support, Netzwerklösungen und IT-Sicherheit aus einer Hand.">
-    <meta name="keywords" content="IT Support, IT-Dienstleistungen, Netzwerklösungen, IT-Sicherheit, 24/7 Support">
-    <meta name="author" content="IT Support Services">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://[Ihr-GitHub-Username].github.io/IT-Support-Website/">
-    
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="IT Support Services - Professionelle IT-Betreuung">
-    <meta property="og:description" content="Professioneller IT-Support und IT-Dienstleistungen für Unternehmen. 24/7 Support, Netzwerklösungen und IT-Sicherheit aus einer Hand.">
-    <meta property="og:image" content="https://[Ihr-GitHub-Username].github.io/IT-Support-Website/static/My_Logo.PNG">
-    <meta property="og:url" content="https://[Ihr-GitHub-Username].github.io/IT-Support-Website/">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="IT Support Services">
-    <meta name="twitter:description" content="Professioneller IT-Support und IT-Dienstleistungen für Unternehmen.">
-    <meta name="twitter:image" content="https://[Ihr-GitHub-Username].github.io/IT-Support-Website/static/My_Logo.PNG">
-    
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "IT Support Services",
-      "description": "Professioneller IT-Support und IT-Dienstleistungen für kleine Unternehmen und Privatpersonen.",
-      "url": "https://syxgit-hub.github.io/IT-Support-Website/",
-      "logo": "https://syxgit-hub.github.io/IT-Support-Website/static/My_Logo.PNG",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "DE"
-      },
-      "serviceType": ["IT Support", "Netzwerklösungen", "IT-Sicherheit"],
-      "areaServed": "Deutschland"
+  <meta charset="UTF-8" />
+  <title>Smart-Factory für KMU | [FIRMENNAME]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Smart-Factory as a Service für kleine und mittlere Industrieunternehmen: IoT-Retrofit, Monitoring, Predictive Maintenance und Managed Service – speziell für KMU."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --primary-soft: #e8f0fe;
+      --accent: #0b8043;
+      --bg: #f8fafc;
+      --text: #202124;
+      --muted: #5f6368;
+      --border: #e0e3ea;
+      --card-bg: #ffffff;
+      --danger: #d93025;
+      --radius-lg: 1.5rem;
+      --radius-md: 0.9rem;
+      --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
     }
-    </script>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header.top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(224, 227, 234, 0.8);
+    }
+
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    .logo-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 0.9rem;
+      background: radial-gradient(circle at 20% 20%, #8ab4f8, #1a73e8);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 0.2rem 0;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 1.3rem;
+      border-radius: 999px;
+      border: 1px solid var(--primary);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #ffffff;
+      background: var(--primary);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+      background: #1558b0;
+      border-color: #1558b0;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 4rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    .section-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .section-title {
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      font-size: 0.98rem;
+      max-width: 620px;
+    }
+
+    /* Hero */
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 0.8rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-kicker span.pill {
+      padding: 0.1rem 0.55rem;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 1px solid rgba(26, 115, 232, 0.2);
+      font-weight: 500;
+    }
+
+    .hero h1 {
+      font-size: 2.45rem;
+      line-height: 1.15;
+      margin: 0 0 0.8rem;
+    }
+
+    .hero-lead {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 34rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.3rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .badge {
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--border);
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 1.3rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .btn-primary:hover {
+      background: #1558b0;
+      border-color: #1558b0;
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .hero-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .hero-media {
+      position: relative;
+    }
+
+    .image-placeholder {
+      border-radius: var(--radius-lg);
+      border: 1px dashed rgba(148, 163, 184, 0.8);
+      background: radial-gradient(circle at 0 0, #e3f2fd, #ffffff);
+      min-height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .image-placeholder small {
+      display: block;
+      margin-top: 0.4rem;
+      font-size: 0.78rem;
+      opacity: 0.9;
+    }
+
+    /* Layout: two-column sections */
+
+    .two-column {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+      gap: 2.6rem;
+      align-items: flex-start;
+    }
+
+    /* Lists & cards */
+
+    ul {
+      padding-left: 1.1rem;
+      margin: 0.5rem 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    li + li {
+      margin-top: 0.25rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      padding: 1.3rem 1.25rem 1.4rem;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.02);
+    }
+
+    .card h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.05rem;
+    }
+
+    .card p {
+      margin: 0.25rem 0 0.6rem;
+      font-size: 0.93rem;
+      color: var(--muted);
+    }
+
+    .card-tag {
+      display: inline-flex;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1.1rem;
+      margin-top: 1.3rem;
+    }
+
+    .kpi-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      padding: 1rem 1.1rem;
+    }
+
+    .kpi-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .kpi-value {
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+
+    .step-list {
+      counter-reset: step;
+      margin: 0.6rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .step-list li {
+      counter-increment: step;
+      position: relative;
+      padding-left: 2.2rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+
+    .step-list li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0.1rem;
+      width: 1.4rem;
+      height: 1.4rem;
+      border-radius: 999px;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: #ffffff;
+    }
+
+    .step-title {
+      font-weight: 500;
+      color: var(--text);
+      display: block;
+      margin-bottom: 0.1rem;
+    }
+
+    /* Founder / About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .founder-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.7rem;
+    }
+
+    .about-text p {
+      margin: 0 0 0.5rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .about-text ul {
+      margin-top: 0.3rem;
+    }
+
+    /* Kontakt */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 2.2rem;
+      align-items: flex-start;
+    }
+
+    .contact-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      padding: 1.4rem 1.4rem 1.6rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+    }
+
+    .form-field {
+      flex: 1 1 160px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.8rem;
+    }
+
+    label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+
+    input,
+    select,
+    textarea {
+      border-radius: 0.6rem;
+      border: 1px solid var(--border);
+      padding: 0.6rem 0.7rem;
+      font-size: 0.9rem;
+      font-family: inherit;
+      resize: vertical;
+      min-height: 2.5rem;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 1px rgba(26, 115, 232, 0.08);
+    }
+
+    .contact-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .contact-meta p {
+      margin: 0 0 0.5rem;
+    }
+
+    .contact-meta a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .contact-meta a:hover {
+      text-decoration: underline;
+    }
+
+    .pill-note {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--border);
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.8rem 1.5rem 2.2rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 960px) {
+      .hero,
+      .two-column,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero {
+        gap: 2.2rem;
+      }
+
+      .hero-media {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .nav-inner {
+        flex-wrap: wrap;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .btn-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      main {
+        padding-top: 3.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <img class="logo_img" src="static/compressed/My_Logo.PNG" alt="Logo" class="logo-img">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Kontakt</a>
-                <a href="impressum.html">Impressum</a>
-                <a href="datenschutz.html">Datenschutz</a>
-            </div>
-        </nav>
-    </header>
+<header class="top-nav">
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-mark">SF</div>
+      <span>[FIRMENNAME] · Smart-Factory</span>
+    </div>
+    <nav aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#pilot">Pilotprojekt</a>
+      <a href="#kpis">Mehrwert</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="nav-cta" href="#kontakt">Pilot anfragen</a>
+  </div>
+</header>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Professioneller IT-Support & Computer-Service</h1>
-            <p>Ihre zuverlässige Lösung für alle IT-Herausforderungen</p>
-            <p>Von erstellung ihres Wunsch Computers bis zur Installation aller nötigen Software</p>
-            <a href="#contact" class="btn">Kontaktieren Sie uns</a>
+<main>
+  <!-- HERO -->
+  <section id="start" class="hero">
+    <div>
+      <div class="hero-kicker">
+        Smart-Factory für KMU
+        <span class="pill">IoT-Retrofit · Monitoring · Managed Service</span>
+      </div>
+      <h1>Smart-Factory für KMU – IoT ohne Risiko, auf bestehende Maschinen.</h1>
+      <p class="hero-lead">
+        Wir bringen Transparenz in Ihre Produktion – mit Sensor-Retrofit, Cloud-Monitoring,
+        Predictive Maintenance und laufendem Betrieb als Service. In 4–8 Wochen vom
+        Blindflug zu messbaren Effekten.
+      </p>
+      <div class="hero-badges">
+        <span class="badge">Fokus: kleine &amp; mittlere Industrieunternehmen</span>
+        <span class="badge">Pilotpaket zum Festpreis</span>
+        <span class="badge">Industrie 4.0 &amp; Embedded-Expertise vereint</span>
+      </div>
+      <div class="btn-group">
+        <a href="#kontakt" class="btn-primary">Pilotprojekt anfragen</a>
+        <a href="#leistungen" class="btn-secondary">Leistungen im Überblick</a>
+      </div>
+      <p class="hero-note">
+        Ideal für Maschinenbau, Metallverarbeitung, Lebensmittelproduktion und
+        Lohnfertiger, die bestehende Anlagen digitalisieren möchten – ohne Großprojekt.
+      </p>
+    </div>
+    <div class="hero-media">
+      <div class="image-placeholder">
+        <div>
+          <strong>Platzhalter für Hero-Bild</strong><br />
+          Vorschlag: Foto einer Produktionslinie mit eingeblendeten Kennzahlen / Dashboard.
+          <small>Ersetze dieses Element durch ein eigenes Bild oder eine Illustration.</small>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="services" id="services">
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="image-placeholder">
-                    <img src="static/compressed/IT-Support_Cat.png" alt="IT Support" class="card_img">
-                    <i class="fas fa-headset"></i>
-                </div>
-                <h3>24/7 Support</h3>
-                <p>Rund um die Uhr technische Unterstützung für Ihr Unternehmen</p>
-            </div>
-            <div class="service-card">
-                <div class="image-placeholder">
-                    <img src="static/compressed/IT-Solution_Cat.png" alt="IT Solution" class="card_img">
-                    <i class="fas fa-network-wired"></i>
-                </div>
-                <h3>Netzwerk-Lösungen</h3>
-                <p>Professionelle Netzwerkinfrastruktur und Wartung</p>
-            </div>
-            <div class="service-card">
-                <div class="image-placeholder">
-                    <img src="static/compressed/IT-Safety_Cat.png" alt="IT Safety" class="card_img">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3>IT-Sicherheit</h3>
-                <p>Umfassender Schutz für Ihre digitalen Assets</p>
-            </div>
+  <!-- PROBLEM & LÖSUNG -->
+  <section id="leistungen">
+    <div class="two-column">
+      <div>
+        <div class="section-header">
+          <div class="section-kicker">Ausgangssituation</div>
+          <h2 class="section-title">Viele KMU produzieren noch im Dunkeln.</h2>
+          <p class="section-subtitle">
+            Veraltete Maschinen, fehlende Sensorik, Insellösungen und kein klares Bild über
+            Ausfälle, OEE oder Energieverbrauch – genau hier setzen wir an.
+          </p>
         </div>
-    </section>
+        <ul>
+          <li>Ältere Anlagen ohne integrierte IIoT-Fähigkeiten („Dunkelproduktion“).</li>
+          <li>Hohe Investitionshürden und unklare Wirtschaftlichkeit klassischer Digitalisierungsprojekte.</li>
+          <li>Begrenztes internes Know-how für IoT, Datenanalyse und Cybersecurity.</li>
+          <li>Keine Kapazität für eigene Entwicklungs- und Integrationsprojekte.</li>
+          <li>Sensible Daten, strenge Compliance-Anforderungen (DSGVO, Lieferketten, Audits).</li>
+        </ul>
+      </div>
+      <div>
+        <div class="section-header">
+          <div class="section-kicker">Unser Ansatz</div>
+          <h2 class="section-title">Smart-Factory as a Service – komplett aus einer Hand.</h2>
+          <p class="section-subtitle">
+            Wir kombinieren Hardware-Retrofit, Datenplattform, Analytik und Managed Service zu
+            einem klar strukturierten Angebot speziell für KMU.
+          </p>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <span class="card-tag">1 · Hardware-Retrofit</span>
+            <h3>Sensorik nachrüsten</h3>
+            <p>
+              Plug-and-play-Sensoren und Gateways für bestehende Maschinen – unabhängig vom
+              Hersteller. Saubere Datengrundlage für OEE, Stillstände, Qualität und Energie.
+            </p>
+          </div>
+          <div class="card">
+            <span class="card-tag">2 · Datenplattform</span>
+            <h3>Realtime-Dashboards &amp; Alerts</h3>
+            <p>
+              Webbasierte Dashboards, Alarme bei Grenzwertverletzungen, Basis-Reporting und
+              Export in Ihre Systeme – von Shopfloor bis Management.
+            </p>
+          </div>
+          <div class="card">
+            <span class="card-tag">3 · Analytics</span>
+            <h3>Predictive Maintenance</h3>
+            <p>
+              Kombination aus historischen Daten und Live-Signalen zur Erkennung von Mustern,
+              Anomalien und potenziellen Ausfällen – bevor sie auftreten.
+            </p>
+          </div>
+          <div class="card">
+            <span class="card-tag">4 · Managed Service</span>
+            <h3>Betrieb, Security &amp; Schulung</h3>
+            <p>
+              Wir betreiben die Plattform, kümmern uns um Updates, Security-Patches und geben
+              Ihr Team mit Schulungen und Workshops mit auf die Reise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="contact" id="contact">
-        <h2>Kontaktieren Sie uns</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="E-Mail" required>
-            <textarea placeholder="Ihre Nachricht" rows="5" required></textarea>
-            <button type="submit" class="btn">Nachricht senden</button>
+  <!-- MODULE -->
+  <section id="module">
+    <div class="section-header">
+      <div class="section-kicker">Leistungsbausteine</div>
+      <h2 class="section-title">Module, die zu Ihrer Fabrik passen.</h2>
+      <p class="section-subtitle">
+        Unser Angebot ist modular aufgebaut. Sie starten schlank und erweitern schrittweise –
+        vom Grundmonitoring bis zum digitalen Zwilling.
+      </p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Baseline-Onboarding</h3>
+        <p>
+          Standortanalyse, Maschineninventar, Sensor-Konzept und Installation. Aufsetzen des
+          Grundmonitorings inklusive OEE-Baseline.
+        </p>
+        <ul>
+          <li>Vor-Ort-Audit &amp; Messplan</li>
+          <li>Erfassung relevanter Maschinen &amp; Linien</li>
+          <li>Definition der wichtigsten KPIs</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Smart Monitoring</h3>
+        <p>
+          Echtzeit-Daten über Ihre Anlagen mit Dashboard, Alarmierung und Basis-Reporting.
+          Vollständig webbasiert, ohne aufwendige IT-Projekte.
+        </p>
+        <ul>
+          <li>Live-Übersicht über Auslastung &amp; Stillstände</li>
+          <li>Alerts bei Schwellwerten (z.&nbsp;B. Temperatur, Vibration, Energie)</li>
+          <li>Standard-Reports für Produktion &amp; Management</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Predictive Maintenance</h3>
+        <p>
+          Nutzung historischer und aktueller Daten zur Erkennung von Anomalien und typischen
+          Ausfallmustern – mit konkreten Wartungsempfehlungen.
+        </p>
+        <ul>
+          <li>Einfache ML-Modelle für Wartungsalarme</li>
+          <li>Trend-Analysen für kritische Komponenten</li>
+          <li>Integration in Wartungs-/Ticketsysteme</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Full-Smart / Digital Twin</h3>
+        <p>
+          Digitales Abbild der Anlage, Szenario-Simulation und tiefe Integrationen in ERP/MES – für
+          Unternehmen, die den nächsten Schritt gehen möchten.
+        </p>
+        <ul>
+          <li>Abbildung von Maschinenzuständen &amp; Prozessketten</li>
+          <li>Was-wäre-wenn-Szenarien (z.&nbsp;B. Schichtmodelle)</li>
+          <li>ERP- und MES-Connectoren</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Managed Service &amp; Support</h3>
+        <p>
+          Wir verantworten Plattformbetrieb, Security-Patches, SLAs und unterstützen Ihr Team
+          bei Fragen und Weiterentwicklung.
+        </p>
+        <ul>
+          <li>Überwachung der Datenpipelines</li>
+          <li>Updates &amp; Security-Patches</li>
+          <li>Support nach SLA-Vereinbarung</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Beratung &amp; Prozess-Optimierung</h3>
+        <p>
+          Workshops, Audits und ROI-Analysen zur Ableitung einer klaren Smart-Factory-Roadmap –
+          von Quick-Wins bis Langfriststrategie.
+        </p>
+        <ul>
+          <li>Management-Workshops &amp; Change-Begleitung</li>
+          <li>Analyse von Verlustquellen &amp; Engpässen</li>
+          <li>Roadmap für die nächsten 12–24 Monate</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILOT -->
+  <section id="pilot">
+    <div class="section-header">
+      <div class="section-kicker">Einstiegspaket</div>
+      <h2 class="section-title">Smart-Factory Pilot in 4–8 Wochen.</h2>
+      <p class="section-subtitle">
+        Mit unserem Einstiegspaket erhalten Sie schnell messbare Ergebnisse auf einem
+        überschaubaren Scope – ideal als Proof-of-Concept in einer Linie oder an wenigen
+        Maschinen.
+      </p>
+    </div>
+    <div class="two-column">
+      <div>
+        <h3>Umfang des Piloten</h3>
+        <ul>
+          <li>1 Standort, typischerweise bis zu 3 Maschinen / eine Linie</li>
+          <li>Vor-Ort-Audit, Mess- und Installationsplan</li>
+          <li>Installation von ca. 4–8 Sensoren plus Gateway</li>
+          <li>
+            Inbetriebnahme des Dashboards mit Kern-KPIs (z.&nbsp;B. OEE-Baseline, Downtime,
+            Energiekennzahlen)
+          </li>
+          <li>1 ganztägiger Workshop mit Produktion/Management</li>
+          <li>Ergebnis-Report mit konkreten Quick-Wins</li>
+          <li>Dokumentation und 30 Tage Support nach Go-Live</li>
+        </ul>
+
+        <h3>Beispiel-Preismodell</h3>
+        <p style="font-size:0.94rem; color:var(--muted);">
+          Die genauen Preise hängen von Umfang und Standort ab. Ein typisches Setup kann wie
+          folgt aussehen:
+        </p>
+        <ul>
+          <li>Pilot: einmalige rabattierte Setup-Gebühr ab ca. 2.500 €</li>
+          <li>inkl. 3 Monate Monitoring-Abo ab ca. 199 €/Monat</li>
+          <li>
+            Option auf Jahresvertrag mit erweitertem Funktionsumfang (Basis/Pro mit Predictive
+            Maintenance und Integrationen)
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ablauf in 5 Schritten</h3>
+        <ol class="step-list">
+          <li>
+            <span class="step-title">1. Erstgespräch &amp; Use-Case-Abgleich</span>
+            Gemeinsames Verständnis von Zielen, Maschinenpark, IT-Rahmenbedingungen und
+            Erfolgskriterien.
+          </li>
+          <li>
+            <span class="step-title">2. Vor-Ort-Audit &amp; Pilotdesign</span>
+            Analyse der Anlage, Auswahl der Pilot-Maschinen, Sensorkonzept und technischer
+            Steckbrief.
+          </li>
+          <li>
+            <span class="step-title">3. Installation &amp; Datenanbindung</span>
+            Sensorinstallation, Gateway-Inbetriebnahme, sichere Anbindung an die Datenplattform
+            (Cloud oder Edge).
+          </li>
+          <li>
+            <span class="step-title">4. Dashboard &amp; Workshop</span>
+            Konfiguration der Dashboards, Kennzahlenreview und gemeinsamer Workshop
+            mit Produktion, Instandhaltung und Management.
+          </li>
+          <li>
+            <span class="step-title">5. Ergebnis-Report &amp; Roadmap</span>
+            Dokumentation der Ergebnisse, Definition von Quick-Wins und Optionen für
+            Rollout/Folgeschritte.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- KPIs & MEHRWERT -->
+  <section id="kpis">
+    <div class="section-header">
+      <div class="section-kicker">Mehrwert &amp; Steuerung</div>
+      <h2 class="section-title">Erfolg messbar machen – mit klaren KPIs.</h2>
+      <p class="section-subtitle">
+        Wir definieren gemeinsam mit Ihnen Kennzahlen, die zum Geschäftsmodell passen – und
+        zeigen auf, wie sich Ihr Smart-Factory-Projekt rechnet.
+      </p>
+    </div>
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <div class="kpi-label">Reduktion ungeplanter Stillstände</div>
+        <div class="kpi-value">-X %</div>
+        <p style="font-size:0.86rem; color:var(--muted);">
+          Analyse von Ausfallgründen, Mustererkennung und datengetriebene Wartungsplanung.
+        </p>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Verbesserung OEE / Anlagenverfügbarkeit</div>
+        <div class="kpi-value">+X Punkte</div>
+        <p style="font-size:0.86rem; color:var(--muted);">
+          Transparente OEE-Baseline, Identifikation von Verlustquellen und Priorisierung von
+          Maßnahmen.
+        </p>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Energie- &amp; Ressourceneffizienz</div>
+        <div class="kpi-value">-X %</div>
+        <p style="font-size:0.86rem; color:var(--muted);">
+          Verbrauchskennzahlen pro Linie/Maschine, Peaks erkennen und Lastprofile optimieren.
+        </p>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Upsell &amp; Bindung</div>
+        <div class="kpi-value">Langfristige Partnerschaft</div>
+        <p style="font-size:0.86rem; color:var(--muted);">
+          Erweiterbare Module, Integrationen und Beratungsleistungen ermöglichen eine schrittweise
+          Skalierung statt Einmalprojekt.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SICHERHEIT & COMPLIANCE -->
+  <section id="sicherheit">
+    <div class="section-header">
+      <div class="section-kicker">Sicherheit &amp; Vertrauen</div>
+      <h2 class="section-title">Datensouveränität &amp; Security by Design.</h2>
+      <p class="section-subtitle">
+        Industrieanlagen sind geschäftskritisch. Deshalb ist Security kein Nachgedanke, sondern von
+        Beginn an Bestandteil unserer Architektur.
+      </p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>DSGVO-konform &amp; transparent</h3>
+        <p>
+          Klare Datenflüsse, minimale Datenspeicherung, vertraglich geregelte Verantwortlichkeiten
+          und transparente Dokumentation für Audits.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Cloud, Edge oder Hybrid</h3>
+        <p>
+          Je nach Anforderung bieten wir flexible Betriebsmodelle – von Cloud-Lösungen bis hin zu
+          Edge-Systemen, die Daten lokal halten.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Harte Zugangskontrolle</h3>
+        <p>
+          Rollenbasierte Berechtigungen, getrennte Umgebungen und Best-Practices für
+          Netzwerksegmentierung im OT-Umfeld.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Updates &amp; Patches als Service</h3>
+        <p>
+          Kontinuierliche Pflege der Plattform, Security-Patches und regelmäßige Überprüfung
+          kritischer Komponenten – ohne Zusatzaufwand für Ihr Team.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÜBER UNS / GRÜNDER -->
+  <section id="ueber-uns">
+    <div class="section-header">
+      <div class="section-kicker">Über [FIRMENNAME]</div>
+      <h2 class="section-title">Industrie-Know-how trifft Embedded-Software.</h2>
+      <p class="section-subtitle">
+        [FIRMENNAME] verbindet praktische Erfahrung aus Produktion &amp; Elektrotechnik mit moderner
+        Software- und KI-Expertise – speziell für mittelständische Industrie in Deutschland.
+      </p>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="founder-badge">
+          Gründer &amp; Inhaber
+          <strong>[Dein Name]</strong>
+        </div>
+        <p>
+          Ich bin staatlich geprüfter Elektrotechniker mit Schwerpunkt Industrie 4.0, IoT und
+          Digitalisierung sowie Softwareentwickler mit Fokus auf Embedded Systeme. Mein
+          Hintergrund umfasst die Integration von Sensorik, Embedded-Plattformen und
+          Cloud-/Backend-Systemen ebenso wie Testing und Qualitätssicherung.
+        </p>
+        <p>
+          Mit [FIRMENNAME] helfe ich insbesondere kleinen und mittleren Industrieunternehmen
+          dabei, bestehende Maschinenparks Schritt für Schritt zu digitalisieren – ohne eigene
+          IoT-Abteilung aufbauen zu müssen.
+        </p>
+        <ul>
+          <li>Embedded-Softwareentwicklung &amp; Feldanbindung (Sensorik, Gateways, Protokolle)</li>
+          <li>Integration von KI-Tools &amp; Analytics-Pipelines in bestehende Prozesse</li>
+          <li>Testautomatisierung, Monitoring und Qualitätssicherung in industriellen Umgebungen</li>
+          <li>Fokus auf pragmatische, wirtschaftlich sinnvolle Industrie-4.0-Lösungen</li>
+        </ul>
+      </div>
+      <div>
+        <div class="image-placeholder">
+          <div>
+            <strong>Platzhalter für Gründer-/Teamfoto</strong><br />
+            Vorschlag: professionelles Portrait des Gründers oder ein Team-Foto im
+            Produktionsumfeld.
+            <small>Ersetze dieses Element durch ein tatsächliches Foto.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt">
+    <div class="section-header">
+      <div class="section-kicker">Kontakt</div>
+      <h2 class="section-title">Lassen Sie uns über Ihren Pilot sprechen.</h2>
+      <p class="section-subtitle">
+        Sie haben eine konkrete Linie oder Maschine im Blick? Schicken Sie uns ein paar Eckdaten –
+        wir melden uns mit einem Vorschlag für ein Pilot-Setup.
+      </p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <form>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name*</label>
+              <input id="name" name="name" type="text" placeholder="Vor- und Nachname" required />
+            </div>
+            <div class="form-field">
+              <label for="company">Unternehmen*</label>
+              <input id="company" name="company" type="text" placeholder="Firmenname" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">E-Mail*</label>
+              <input id="email" name="email" type="email" placeholder="name@firma.de" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Telefon</label>
+              <input id="phone" name="phone" type="tel" placeholder="+49 ..." />
+            </div>
+          </div>
+          <div class="form-field" style="margin-top:1rem;">
+            <label for="interest">Worum geht es?</label>
+            <select id="interest" name="interest">
+              <option value="">Bitte auswählen</option>
+              <option value="pilot">Pilotprojekt (4–8 Wochen)</option>
+              <option value="monitoring">Monitoring für bestehende Anlagen</option>
+              <option value="predictive">Predictive Maintenance</option>
+              <option value="beratung">Beratung / Roadmap</option>
+              <option value="sonstiges">Sonstiges / Rückruf</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Kurzbeschreibung Ihrer Situation</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Z. B. Branche, Standort, Anzahl der Maschinen, aktuelle Herausforderungen ..."
+            ></textarea>
+          </div>
+          <div style="margin-top:1.2rem; display:flex; flex-direction:column; gap:0.7rem;">
+            <button type="submit" class="btn-primary" style="align-self:flex-start; border-radius:999px;">
+              Unverbindliches Erstgespräch anfragen
+            </button>
+            <span class="pill-note">
+              <span>⏱</span>
+              <span>Antwort in der Regel innerhalb von 1–2 Werktagen.</span>
+            </span>
+          </div>
         </form>
-    </section>
+      </div>
+      <div class="contact-meta">
+        <p><strong>[FIRMENNAME]</strong></p>
+        <p>
+          <span>Inhaber: [Dein Name]</span><br />
+          <span>Schwerpunkt: Smart-Factory, IoT-Retrofit &amp; Industrie 4.0-Lösungen für KMU</span>
+        </p>
+        <p>
+          E-Mail: <a href="mailto:kontakt@deinefirma.de">kontakt@deinefirma.de</a><br />
+          Telefon: <a href="tel:+491234567890">+49 123 456 7890</a>
+        </p>
+        <p>
+          <strong>Optional:</strong><br />
+          Firmenadresse, Handelsregister-Angaben, USt-ID, Impressum/Datenschutz als separate
+          Seiten oder Footer-Links ergänzen.
+        </p>
+        <div style="margin-top:1.3rem;">
+          <div class="image-placeholder" style="min-height:140px; box-shadow:none;">
+            <div>
+              <strong>Platzhalter für Referenzen / Logos</strong><br />
+              Vorschlag: Logos von Pilot-/Referenzkunden oder Zertifizierungen (IHK, Verbände
+              etc.), sobald vorhanden.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+<footer>
+  © <span id="year"></span> [FIRMENNAME]. Alle Rechte vorbehalten.
+  &nbsp;|&nbsp;
+  <a href="#start" style="color:inherit; text-decoration:none;">Nach oben</a>
+  <!-- TODO: Impressum und Datenschutzerklärung verlinken -->
+</footer>
+
+<script>
+  // Setzt automatisch das aktuelle Jahr im Footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
